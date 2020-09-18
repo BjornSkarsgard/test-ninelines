@@ -1,0 +1,65 @@
+@import "variables";
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+	&__items {
+		margin: 0;
+		margin-bottom: 40px;
+		padding: 0;
+
+		li:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__label {
+		position: relative;
+		padding-left: 30px;
+		font-family: $rm;
+		font-size: 12px;
+		cursor: pointer;
+	}
+
+	&__check {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 13px;
+		height: 10px;
+		fill: #fff;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	&__checkbox {
+		display: none;
+
+		&-indicator {
+			position: absolute;
+			left: 0;
+			top: -1px;
+			display: inline-block;
+			border-radius: 5px;
+			width: 20px;
+			height: 20px;
+			background-color: #eee;
+			transition: background-color 0.3s ease;
+		}
+
+		&:checked {
+			+ .skills__checkbox-indicator {
+				background-color: #0093d7;
+
+				.skills__check {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

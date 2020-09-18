@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<style>
+		</style>
+
+		<style>
+		</style>
+	</defs>
+<symbol id="check" viewBox="0 0 13 10">
+	<path d="M0 6.2L1.685 5 5 8.8 3.315 10zM4.2 10L3 8.315 11.8 0 13 1.685z" class="cls-1" data-name="Shape 6 copy"/>
+</symbol>
+<symbol id="Shape1" viewBox="0 0 84 99.656">
+	<path fill="#ffc815" fill-rule="evenodd" d="M-.012 99.65A125.713 125.713 0 0149.164.01l34.842 42.349C65.348 56.999 55.578 74.307 55.578 99.65H-.012z"/>
+</symbol>
+<symbol id="Shape2" viewBox="0 0 145.813 66.031">
+
+	<path d="M-.001 22.992a127.058 127.058 0 01145.817 0l-34.518 43.039c-14.684-9.917-26.3-12.2-38.387-12.2-12.056 0-26.188 4.358-38.352 12.2z" class="lvl__shape__2path"/>
+</symbol>
+<symbol id="Shape3" viewBox="0 0 81.469 99.656">
+
+	<path d="M33.686.01a126.875 126.875 0 0147.792 99.64H27.491c0-25.343-10.4-43.4-27.486-57.291z" class="lvl__shape__3path"/>
+</symbol>
+<symbol id="Shape4" viewBox="0 0 64 19">
+	<path d="M63.993 9.73A9.14 9.14 0 0154.729 19L.014 9.538l54.8-9.531a9.615 9.615 0 019.177 9.723z" class="lvl__shape__arrowpath"/>
+</symbol>
+</svg>

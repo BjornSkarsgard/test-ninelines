@@ -1,0 +1,11 @@
+<svg class="lvl__shape lvl__shape__3" width="81.469" height="99.656" viewBox="0 0 81.469 99.656">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #0093d7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="lvl__shape__3path" d="M395.248,649.26A126.875,126.875,0,0,1,443.04,748.9H389.053c0-25.343-10.4-43.4-27.486-57.291Z" transform="translate(-361.562 -649.25)"/>
+</svg>

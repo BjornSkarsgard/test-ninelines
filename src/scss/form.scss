@@ -1,0 +1,107 @@
+@import "variables";
+
+.form {
+	background-color: $color-background;
+
+	&__container {
+		background: url("../images/sprites/png/background.png") 50% 50% repeat;
+	}
+
+	&__title {
+		display: inline-block;
+		margin-bottom: 25px;
+		font-family: $rm;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	&__wrapper {
+		margin-bottom: 2px;
+		padding: 30px 5px;
+	}
+
+	&__img {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__image {
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+		max-width: 200px;
+
+		@media (min-width: $md) {
+			max-width: 140px;
+		}
+
+		@media (min-width: $lg) {
+			max-width: 200px;
+		}
+	}
+
+	&__data-block {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		label {
+			position: relative;
+			margin: 0;
+		}
+
+		label:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
+		@media (min-width: $md) {
+			&::before {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 185px;
+				height: 185px;
+				background: url("../images/sprites/png/shape.png") 50% 50% no-repeat;
+			}
+		}
+	}
+
+	&__input {
+		border: none;
+		border-bottom: 2px solid $color-gray;
+		padding-bottom: 8px;
+		width: 100%;
+		height: 22px;
+		box-sizing: border-box;
+		font-family: $rm;
+		font-size: 12px;
+		line-height: 22px;
+		text-transform: uppercase;
+		color: $color-lightgray;
+		background-color: transparent;
+
+		&-decorate {
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 0%;
+			height: 2px;
+			background-color: #0093d7;
+			transition: width 0.3s ease, left 0.3s ease;
+		}
+
+		&:focus {
+			outline: none;
+
+			+ .form__input-decorate {
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	@media (min-width: $sm) {
+		padding: 50px 0 100px;
+	}
+}

@@ -1,0 +1,64 @@
+extends pug/base
+include pug/skills
+
+prepend vars
+
+append vars
+	-
+		input = [
+					{name: "Иван", placeholder: "Имя", type: "text"},
+					{name: "1999-01-28", placeholder: "Дата рождения", type: "date"},
+					{name: "Тюмень", placeholder: "Город", type: "text"},
+					{name: "bjornskarsgarddev@gmail.com", placeholder: "Контактные данные", type: "text"}
+						]
+block content
+	section.form
+		.container.form__container
+			.form__wrapper
+				.row
+					.col-12.col-sm-4.col-md-3
+						.form__img
+							img.form__image(src="./images/photo.jpg" height="137" width="138" alt="Фото")
+
+					.col-12.col-sm-8.col-md-9
+						.form__data-block
+							each val, index in input
+								label
+									input.form__input(type=val.type placeholder=val.placeholder value=val.name)
+									span.form__input-decorate
+
+		.container.form__container
+			.form__wrapper
+				.form__skills
+					.row
+						.col-4
+							span.form__title
+								| Навыки
+					+skills()
+
+		.container.form__container
+			.form__wrapper
+				.lvl
+					.row
+						.col-12.col-md-5
+							.lvl__graph
+								.lvl__graph-wrapper
+									svg.lvl__shape.lvl__shape__1(width="84" height="99.656" viewbox="0 0 84 99.656")
+										defs
+										path.lvl__shape__1path(d="M189.988,748.9a125.713,125.713,0,0,1,49.176-99.64l34.842,42.349c-18.658,14.64-28.428,31.948-28.428,57.291h-55.59Z" transform="translate(-190 -649.25)")
+									svg.lvl__shape.lvl__shape__2(width="145.813" height="66.031" viewbox="0 0 145.813 66.031")
+										defs
+										path.lvl__shape__2path(d="M245.124,644.961a127.058,127.058,0,0,1,145.817,0L356.423,688c-14.684-9.917-26.3-12.2-38.387-12.2-12.056,0-26.188,4.358-38.352,12.2Z" transform="translate(-245.125 -621.969)")
+									svg.lvl__shape.lvl__shape__3(width="81.469" height="99.656" viewbox="0 0 81.469 99.656")
+										defs
+										path.lvl__shape__3path(d="M395.248,649.26A126.875,126.875,0,0,1,443.04,748.9H389.053c0-25.343-10.4-43.4-27.486-57.291Z" transform="translate(-361.562 -649.25)")
+									svg.lvl__shape.lvl__shape__arrow(width="64" height="19" viewbox="0 0 64 19")
+										defs
+										path.lvl__shape__arrowpath(d="M63.993,19.73A9.14,9.14,0,0,1,54.729,29L0.014,19.538l54.8-9.531h0a9.615,9.615,0,0,1,9.177,9.723h0Z" transform="translate(0 -10)")
+
+						.col-12.col-md-4.offset-md-1
+							.lvl__score-block
+								span.lvl__title
+									| Мой уровень владения Java Script
+								span.lvl__count(dataval = "0")
+									| 0

@@ -1,0 +1,33 @@
+// stylelint-disable no-empty-source
+
+// @font-face {
+// 	src: url("Roboto-Medium.eot");
+// 	src: url("Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("Roboto-Medium.woff") format("woff"),
+// 		url("Roboto-Medium.ttf") format("truetype");
+// 	font-family: "Roboto Medium";
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	src: url("Roboto-Black.eot");
+// 	src: url("Roboto-Black.eot?#iefix") format("embedded-opentype"), url("Roboto-Black.woff") format("woff"),
+// 		url("Roboto-Black.ttf") format("truetype");
+// 	font-family: "Roboto Black";
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@font-face {
+	src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+	font-family: "Roboto Medium";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+	font-family: "Roboto Black";
+	font-weight: 900;
+	font-style: normal;
+}
